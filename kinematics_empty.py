@@ -16,7 +16,6 @@ theta3Correction = 0 # Un complément
 
 
 def computeDK (theta1, theta2, theta3, l1 = constL1, l2 = constL2, l3 = constL3):       #direct kinematic, tp1
-    # Un completer
     d12 = l2 * cos(theta2)
     d23 = l3 * cos(theta2 + theta3)
     P2z = sin(theta2) * L2
