@@ -7,7 +7,7 @@ constL3 = 133
 theta2Correction = 0 # Un complément
 theta3Correction = 0 # Un complément
 
-# Dimensions utilisées pour la simulation de bras simple
+# Dimensions used to simulate simple arm
 # bx = 0,07
 # bz = 0,25
 # constL1 = 0,085
@@ -27,7 +27,7 @@ def computeDK (theta1, theta2, theta3, l1 = constL1, l2 = constL2, l3 = constL3)
 
 
 def computeIK (x, y, z, l1 = constL1, l2 = constL2, l3 = constL3):                      #inverse kinematic, tp2
-    thêta1 = arctan(y/x)
+    thêta1 = arctan(y/x)                                                                #3 angle formulas
     thêta2 = arcos((d²+ l2²-l3²)/(2*l2*l3))
     thêta3 = math.pi - arcos (l2² + l3² + sqrt(x²+y²+z²)(2*l2*l3))
 
