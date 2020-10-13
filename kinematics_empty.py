@@ -16,7 +16,7 @@ theta3Correction = 0 # Un complément
 
 
 def computeDK (theta1, theta2, theta3, l1 = constL1, l2 = constL2, l3 = constL3):       #direct kinematic, tp1
-    d12 = l2 * cos(theta2)
+    d12 = l2 * cos(theta2)                                                              #calculation of variables and constants to be used in tp1
     d23 = l3 * cos(theta2 + theta3)
     P2z = sin(theta2) * L2
     P3x = (l1 + d12 + d23) * cos(theta1)
@@ -55,5 +55,5 @@ def main ():
     )
 
 
-si __name__ == "__main__":
+si __name__ == "__main__":                                                              # name function to test the programm
     principale()
