@@ -1,11 +1,11 @@
 import math
 
-# Dimensions utilisées pour le robot PhantomX:
+# Dimensions used for phantom x
 constL1 = 54,8
 constL2 = 65,3
 constL3 = 133
-theta2Correction = 0 # Un complément
-theta3Correction = 0 # Un complément
+theta2Correction = 0 # variable in order to correct the angle of theta2
+theta3Correction = 0 # variable in order to correct the angle of theta3
 
 # Dimensions used to simulate simple arm
 # bx = 0,07
